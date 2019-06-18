@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "description": "A type for all financial value-related fields. For example, balance, payment due, and so on.",
+    "title": "Money type that includes currency code qualified value",
+    "properties": {
+        "currency_code": {
+            "$ref": "./currency_code.json"
+        },
+        "value": {
+            "type": "string",
+            "description": "Can be anything from an integer for currencies that are not typically fractional, like JPY, to a three-place decimal fraction for currencies like TND that are subdivided into thousandths, to a currency like BitCoin that has eight decimal places. For the required number of decimal places for a currency code, see [ISO 4217](http://www.iso.org/iso/home/standards/currency_codes.htm).",
+            "maxLength": 32,
+	    "pattern": "^((-?[0-9]+)|(-?([0-9]+)?[.][0-9]+))$"
+        }
+    },
+    "required": [
+        "currency_code",
+        "value"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "description": "The three-letter [ISO 4217](http://www.iso.org/iso/home/standards/currency_codes.htm) alphabetic currency code.",
+    "type": "string",
+    "format": "ppaas_common_currency_code_v2",
+    "minLength": 3,
+    "maxLength": 3
+}

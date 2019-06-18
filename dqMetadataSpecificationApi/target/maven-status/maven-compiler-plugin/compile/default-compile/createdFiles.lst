@@ -1,0 +1,6 @@
+com\paypal\credit\statement\model\Error.class
+com\paypal\credit\statement\model\Money.class
+com\paypal\credit\statement\api\StatementsResource.class
+com\paypal\credit\statement\model\LinkDescription.class
+com\paypal\credit\statement\model\StatementHeader.class
+com\paypal\credit\statement\model\ErrorDetails.class

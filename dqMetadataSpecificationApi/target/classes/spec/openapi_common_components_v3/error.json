@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "title": "error",
+    "description": "Error details.",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Human-readable, unique name of the error."
+        },
+        "message": {
+            "type": "string",
+            "description": "A message that describes the error."
+        },
+        "debug_id": {
+            "type": "string",
+            "description": "PayPal internal ID that is used for correlation purposes."
+        },
+        "information_link": {
+            "type": "string",
+            "description": "An information link, or URI, that shows detailed information about this error for the developer."
+        },
+        "details": {
+            "type": "array",
+            "description": "Additional details about the error.",
+            "items": {
+                "$ref": "./error_details.json"
+            }
+        },
+        "links": {
+            "type": "array",
+            "description": "Error context-specific [HATEOAS links](/docs/api/hateoas-links/).",
+            "items": {
+                "$ref":"./link_description.json"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "message",
+        "debug_id"
+    ]
+}

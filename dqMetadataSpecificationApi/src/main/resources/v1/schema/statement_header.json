@@ -1,0 +1,36 @@
+{
+    "title": "Statement Header",
+    "description": "A statement header that includes info such as statement date, balance amount and availability of PDF and Snapshot formats of the statement",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Sequence generated Statement ID.",
+            "type": "integer",
+            "format": "int64"
+        },
+        "closing_date": {
+            "description": "Statement cycled or closing date",
+            "$ref": "openapi_common_components_v3/date_no_time.json"
+        },
+        "start_date": {
+            "description": "Start date for this statement",
+            "$ref": "openapi_common_components_v3/date_no_time.json"
+        },
+        "balance": {
+            "description": "Statement balance amount.",
+            "$ref": "openapi_common_components_v3/money.json"
+        },
+        "available_media_types": {
+            "description": "List of available media types for the statement. Currently only `application/pdf` and `application/json` are available",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "closing_date",
+        "balance"
+    ]
+}
