@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "client": {
+      "$ref": "#/definitions/Client"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "executionMode": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notifyFlg": {
+      "type": "string"
+    },
+    "ruleSetMapping": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleSetMapping"
+      }
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "RuleSet"
+}
