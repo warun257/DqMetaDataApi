@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "rule": {
+      "$ref": "#/definitions/Rule"
+    },
+    "ruleTemplateVariable": {
+      "$ref": "#/definitions/RuleTemplateVariable"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "value": {
+      "$ref": "#/definitions/Clob"
+    }
+  },
+  "title": "RuleVariableMapping"
+}

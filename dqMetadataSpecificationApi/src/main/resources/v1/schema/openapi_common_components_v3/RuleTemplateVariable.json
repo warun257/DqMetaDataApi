@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "mandatoryFlg": {
+      "type": "boolean"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "ruleTemplate": {
+      "$ref": "#/definitions/RuleTemplate"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "variableName": {
+      "type": "string"
+    }
+  },
+  "title": "RuleTemplateVariable"
+}
