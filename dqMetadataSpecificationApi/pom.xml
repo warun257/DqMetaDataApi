@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.paypal.ppaas.openapi-codegen-maven-plugin.it</groupId>
-    <artifactId>simple-it-default-values</artifactId>
+    <groupId>com.paypal.ppaas.openapi-codegen-maven-plugin.dq-metaservice</groupId>
+    <artifactId>dq-metasrivice-specification</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <description>A simple integration test verifying the basic use case.  Plugin declaration is using all default values</description>
