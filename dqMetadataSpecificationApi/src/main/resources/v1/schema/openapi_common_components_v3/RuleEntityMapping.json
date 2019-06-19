@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "activeFlag": {
+      "$ref": "#/definitions/Character"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entityBehaviour": {
+      "type": "string"
+    },
+    "entityData": {
+      "$ref": "#/definitions/EntityData"
+    },
+    "expiredTs": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "rule": {
+      "$ref": "#/definitions/Rule"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "RuleEntityMapping"
+}

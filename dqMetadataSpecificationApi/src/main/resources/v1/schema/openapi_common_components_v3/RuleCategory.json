@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryDefinition": {
+      "type": "string"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "ruleCategory": {
+      "type": "string"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "RuleCategory"
+}

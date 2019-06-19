@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "activeFlag": {
+      "$ref": "#/definitions/Character"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiredTs": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "rule": {
+      "$ref": "#/definitions/Rule"
+    },
+    "ruleSet": {
+      "$ref": "#/definitions/RuleSet"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "RuleSetMapping"
+}

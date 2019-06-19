@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string"
+    },
+    "dqTier": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "measure": {
+      "$ref": "#/definitions/Measure"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "ruleCategory": {
+      "$ref": "#/definitions/RuleCategory"
+    },
+    "ruleEntityMapping": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleEntityMapping"
+      }
+    },
+    "ruleName": {
+      "type": "string"
+    },
+    "ruleSetMapping": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleSetMapping"
+      }
+    },
+    "ruleTemplate": {
+      "$ref": "#/definitions/RuleTemplate"
+    },
+    "ruleVariableMapping": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleVariableMapping"
+      }
+    },
+    "severity": {
+      "type": "string"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "Rule"
+}
