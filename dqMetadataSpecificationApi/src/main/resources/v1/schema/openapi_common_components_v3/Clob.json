@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "asciiStream": {
+      "$ref": "#/definitions/InputStream"
+    },
+    "characterStream": {
+      "$ref": "#/definitions/Reader"
+    }
+  },
+  "title": "Clob"
+}

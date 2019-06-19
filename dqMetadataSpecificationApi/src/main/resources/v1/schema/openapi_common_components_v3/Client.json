@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "businessCategory": {
+      "type": "string"
+    },
+    "businessSubCategory": {
+      "type": "string"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "contactEmail": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "string"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "ruleSet": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleSet"
+      }
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "Client"
+}

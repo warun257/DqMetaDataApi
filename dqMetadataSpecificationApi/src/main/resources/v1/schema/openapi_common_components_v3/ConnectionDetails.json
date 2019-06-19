@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "connectionType": {
+      "type": "string"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entityData": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/EntityData"
+      }
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "securityZone": {
+      "type": "string",
+      "enum": [
+        "HRZ",
+        "PAZ",
+        "OTHER"
+      ]
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "url": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    }
+  },
+  "title": "ConnectionDetails"
+}

@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "availabilityLayer": {
+      "type": "string"
+    },
+    "connection": {
+      "$ref": "#/definitions/ConnectionDetails"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "domainName": {
+      "type": "string"
+    },
+    "entityLocation": {
+      "type": "string"
+    },
+    "entityType": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "originSourceSystem": {
+      "type": "string"
+    },
+    "ownerName": {
+      "type": "string"
+    },
+    "ruleEntityMapping": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RuleEntityMapping"
+      }
+    },
+    "subsidiaryName": {
+      "type": "string"
+    },
+    "uniqueRowId": {
+      "type": "string"
+    },
+    "unqRowId": {
+      "type": "string"
+    },
+    "updateDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "title": "EntityData"
+}
